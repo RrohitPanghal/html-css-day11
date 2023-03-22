@@ -1,0 +1,35 @@
+<!-- 
+    TRANSFORMS
+    TRANSITION
+    ANIMATIONN
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="photo">
+            <img id="myImage" src="kyllie.jpg" alt="model">
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+    myImage.style.width='56px';
+    myImage.style.height='16px';
+    btn.addEventListener("click" , ()=> {
+        myImage.style.height='455px';
+        if (myImage.style.width === '700px') {
+            myImage.style.width = '56px'
+        }
+        else if (myImage.style.width === '56px') {
+            myImage.style.width = '700px'
+        }
+    }) 
+</script>
+</html>
